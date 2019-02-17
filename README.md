@@ -24,7 +24,7 @@ Algorithm Idea:
    enough place (0.3 cm) for the robot to move forward - Do so. Otherwise, turn 60 degress back + 60 degrees to the left and check the
    second side this time.
    If there's no place in both side, try turning less then 60 degrees (tries 3 different degrees).
-6. After moving forward, turn back to face the blue box - then move forward and push it. 
+6. After moving forward, turn around to face the blue box - then move forward and push it. 
 7. The robot would move backward a bit, then resume the navigation to the end.
    
 
