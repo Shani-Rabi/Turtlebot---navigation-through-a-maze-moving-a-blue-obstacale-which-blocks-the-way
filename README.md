@@ -18,7 +18,10 @@ Algorithm Idea:
 
 1. The robot turns 360 degrees in order to better understand its location in the map.
 2. The robot starts to navigate to the end of the maze, using "move_base" package. 
-3. The robot stops navigating when it identifies the blue box in less then 0.55 m.
+3. The robot stops navigating when it identifies the blue box in less then 0.55 m. In order to find the blue box the robot uses 
+   the usb cam and the laser: we define the BGR range for the blue color, and turn the image to black and white (blue turns to white,
+   any other thing to black). We look for contours in this gray image - if there's a countour big enough (compared to the
+   image size), we turn the robot to be in front of it, and use the laser to find the distance to it. 
 4. The robot turns to the center of the blue obstacle and approaches it by ~20 cm.
 5. The robot turns 60 degrees to the right, then checks the +-17 degrees in front of him using the laser - if there's
    enough place (0.3 cm) for the robot to move forward - Do so. Otherwise, turn 60 degress back + 60 degrees to the left and check the
