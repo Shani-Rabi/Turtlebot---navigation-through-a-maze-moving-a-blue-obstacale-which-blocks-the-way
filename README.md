@@ -8,10 +8,12 @@ The final project involves navigating in an obstacle course. A practice course i
 
 
 How to Run:
-1. Open Rviz, set the robot position to the goal point. Run in terminal: rostopic echo /amcl_pose. Change xgoal, ygoal parametrs in the main
+1. Update your parameters according to the maze. We've attached ours.
+2. Open Rviz, set the robot position to the goal point. Run in terminal: rostopic echo /amcl_pose. Change xgoal, ygoal parametrs in the main
 according to the this point.
-2. Set the robot position back to the start of the maze.
-3. run the python code (The main file is called ass4.py). 
+3. Set the robot position back to the start of the maze.
+4. run the python code (The main file is called ass4.py). 
+
 
 
 Algorithm Idea:
